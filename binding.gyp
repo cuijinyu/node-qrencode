@@ -1,20 +1,21 @@
 {
   "targets": [{
     "target_name": "libqr",
+    "type": "static_library",
     'conditions': [
       ['OS=="mac"', {
         'libraries': [
-          "libqrencode.dylib"
+          "./deps/lib/libqrencode.dylib"
         ],
       }],
       ['OS=="linux"', {
         'libraries': [
-          "libqrencode.so"
+          "./deps/lib/libqrencode.so"
         ],
       }],
       ['OS=="windows"', {
         'libraries': [
-          "libqrencode.lib"
+          "./deps/lib/libqrencode.lib"
         ],
       }]
     ],

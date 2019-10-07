@@ -1,0 +1,11 @@
+prefix=/Users/cuijinyu/Documents/libqr/deps/bin
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libqrencode
+Description: A QR Code encoding library
+Version: 4.1.0
+Libs: -L${libdir} -lqrencode
+Libs.private: -lpthread
+Cflags: -I${includedir}
